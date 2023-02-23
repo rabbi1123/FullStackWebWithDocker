@@ -1,0 +1,15 @@
+<div class="container my-5">
+    <h1 class="mb-3">Add new Resource</h1>
+    <div class="row">
+        <div class="col-6">
+            <form #form="ngForm" (ngSubmit)="addResource()">
+                <div class="mb-3">
+                    <label for="resourceName" class="form-label">Resource Name</label>
+                    <input type="text" class="form-control" id="resourceName"
+                    name="resourceName" [(ngModel)]="resource.resourceName">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
